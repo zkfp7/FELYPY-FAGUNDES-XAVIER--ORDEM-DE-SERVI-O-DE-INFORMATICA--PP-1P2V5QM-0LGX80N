@@ -12,7 +12,7 @@ export default function App() {
 
   function adicionar() {
     if (bloqueado) return;
-    
+
     setChamados([...chamados, { titulo, solicitante, resumo, prioridade }]);
     setTitulo('');
     setSolicitante('');
@@ -26,8 +26,8 @@ export default function App() {
       <p>Título: <input value={titulo} onChange={e => setTitulo(e.target.value)} /></p>
       <p>Solicitante: <input value={solicitante} onChange={e => setSolicitante(e.target.value)} /></p>
       <p>Solução: <input value={resumo} onChange={e => setResumo(e.target.value)} /></p>
-      
-      <p>Prioridade: 
+
+      <p>Prioridade:
         <select value={prioridade} onChange={e => setPrioridade(e.target.value)}>
           <option value="Baixa">Baixa</option>
           <option value="Alta">Alta</option>
@@ -48,3 +48,4 @@ export default function App() {
     </div>
   );
 }
+// commit interface
